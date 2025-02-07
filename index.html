@@ -19,7 +19,7 @@
             position: relative;
             width: 820px;
             height: 600px;
-            background: url('Scenes/BG_Room.jpg') no-repeat center center/cover;
+            background: url('BG_Room.jpg') no-repeat center center/cover;
         }
         #videoIntro {
             position: absolute;
@@ -54,14 +54,14 @@
 </head>
 <body>
     <div id="gameContainer">
-        <video id="videoIntro" src="Assets/intro.mp4" autoplay></video>
+        <video id="videoIntro" src="intro.mp4" autoplay></video>
         <div id="joystick"></div>
         <button id="AButton">A</button>
     </div>
     <script>
         document.getElementById("videoIntro").addEventListener("ended", function() {
             this.style.display = "none";
-            document.getElementById("gameContainer").style.backgroundImage = "url('Scenes/BG_Room.jpg')";
+            document.getElementById("gameContainer").style.backgroundImage = "url('BG_Room.jpg')";
         });
 
         document.getElementById("AButton").addEventListener("click", function() {
